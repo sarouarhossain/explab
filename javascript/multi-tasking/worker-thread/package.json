@@ -1,0 +1,17 @@
+{
+    "name": "worker-thread",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node --experimental-worker server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "node-worker-threads-pool": "^1.5.0",
+        "worker-threads-pool": "^2.0.0"
+    }
+}

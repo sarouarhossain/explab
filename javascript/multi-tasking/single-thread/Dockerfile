@@ -20,3 +20,4 @@ EXPOSE 3000
 CMD [ "npm", "start" ]
 
 # docker build -t demoapp .
+# docker ps --format "table {{.ID}}\t{{.Status}}\t{{.Names}}"    

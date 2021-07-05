@@ -1,0 +1,48 @@
+version: '3.3'
+
+services:
+  # nginx:
+  #   image: nginx:stable
+  #   restart: always
+  #   ports:
+  #     - '3000:8080'
+  #   volumes:
+  #     - './nginx.conf:/etc/nginx/nginx.conf:ro'
+  #   networks:
+  #     - node_demo
+  app1:
+    ports:
+      - '3001:8080'
+    environment:
+      - APPID=app1
+    image: demo
+    container_name: app1
+    # networks:
+    #   - node_demo
+  app2:
+    ports:
+      - '3002:8080'
+    environment:
+      - APPID=app2
+    image: demo
+    container_name: app2
+    # networks:
+    #   - node_demo
+  app3:
+    ports:
+      - '3003:8080'
+    environment:
+      - APPID=app3
+    image: demo
+    container_name: app3
+    # networks:
+    #   - node_demo
+  app4:
+    ports:
+      - '3004:8080'
+    environment:
+      - APPID=app4
+    image: demo
+    container_name: app4
+    # networks:
+    #   - node_demo
